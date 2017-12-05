@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="model.AppModRoot">
+    <AppModuleConfig name="AppModRootLocal" jbo.project="model.Model" ApplicationName="model.AppModRoot"
+                     DeployPlatform="LOCAL">
+      <Security AppModuleJndiName="model.AppModRoot"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="AppModRootShared" jbo.project="model.Model" ApplicationName="model.AppModRoot"
+                     DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Security AppModuleJndiName="model.AppModRoot"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>
